@@ -1,0 +1,269 @@
+/**
+ * Navigation Sidebar
+ */
+
+.master-sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 240px;
+	background-color: #29394D;
+	background-color: #1E2C3D;
+	color: #FFF;
+}
+
+.master-sidebar.ui-resizable .ui-resizable-e {
+	cursor: col-resize;
+}
+
+.master-logo {
+	display: block;
+	width: 100%;
+	height: 52px;
+	background: #1F2937 url(../images/logo_ireward.png) no-repeat;
+	background-size: contain;
+}
+
+.master-search {
+	display: block;
+	padding-right: 20px;
+}
+
+.master-search input {
+	margin: 10px;
+	padding: 6px;
+	width: 100%;
+	font-size: inherit;
+	border: none;
+	border-radius: 18px;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+}
+
+.master-nav {
+	position: absolute;
+	top: 108px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: auto;
+}
+
+.master-nav li {
+	position: relative;
+}
+
+.master-nav a {
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	padding: 12px 20px;
+	color: #EEE;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: .25s;
+}
+
+.master-nav a:hover {
+	background: #44556B;
+	color: #FFF;
+}
+
+.master-nav i {
+	width: 32px;
+	font-size: 1.25em;
+}
+
+.master-nav li ul {
+	background-color: #1E2C3D;
+	display: none;
+}
+
+.master-nav li ul a {
+	padding-left: 52px;
+}
+
+.master-nav li.active::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 3px;
+	background: #269EB9;
+}
+
+.master-nav li.expandable a::before {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	font-family: FontAwesome;
+	font-size: 1.25em;
+	content: "\f105";
+	transition: .25s;
+}
+
+.master-nav li.expandable.active a::before {
+	transform: rotateZ(90deg);
+}
+
+.master-nav li.expandable::before {
+	background: none;
+}
+
+.master-nav li.expandable ul a::before {
+	content: "";
+}
+/**
+ * Narrow view for master sidebar
+ */
+
+.narrow .master-sidebar {
+	overflow: visible;
+}
+
+.narrow .master-nav li::before {
+	content: "";
+}
+
+.narrow .master-nav a {
+	padding: 12px 0;
+	text-align: center;
+}
+
+.narrow .master-nav i {
+	font-size: 2em;
+	width: 64px;
+}
+/**
+ * Master Main
+ */
+
+.master-main {
+	margin-left: 240px;
+}
+
+.narrow .master-main {
+	margin-left: 64px;
+}
+/**
+ * Master Header
+ */
+
+.master-header {
+	height: 52px;
+	background-color: #37485D;
+	background-color: #1E2C3D;
+	position: relative;
+	z-index: 1;
+}
+
+.master-title {
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 52px;
+	padding-left: 30px;
+	float: left;
+}
+
+.header-nav {
+	float: right;
+}
+
+.header-nav ul {
+	text-align: right;
+}
+
+.header-nav li {
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+.header-nav a {
+	display: block;
+	color: #CBD3DB;
+	font-family: 'Raleway', sans-serif;
+	padding: 0 10px;
+	margin: 6px;
+	line-height: 40px;
+	border-radius: 3px;
+	transition: .25s;
+}
+
+.header-nav img {
+	width: 28px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.header-nav i {
+	margin-left: 6px;
+	font-size: 1.25em;
+}
+
+.header-nav li ul {
+	display: none;
+	position: absolute;
+	top: 52px;
+	right: 0;
+	width: 120px;
+	background-color: #37485D;
+	background-color: #1E2C3D;
+	text-align: left;
+}
+
+.header-nav li ul li {
+	display: block;
+	float: none;
+}
+
+.header-nav li:hover ul {
+	display: block;
+}
+
+.header-nav li ul i {
+	margin-left: 0;
+	width: 28px;
+}
+
+.header-nav li ul li:hover a {
+	background-color: #44556B;
+	color: #FFF;
+}
+/**
+ * Main Body
+ */
+
+.main-title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	line-height: 1;
+	margin: 0 30px;
+	padding: 20px 0;
+	border-bottom: 1px solid #E2E2E2;
+}
+
+.main-body {
+	position: relative;
+	padding: 30px 0;
+	margin: 0 30px;
+	border-top: 1px solid #FFF;
+}
+
+.action-button {
+	position: absolute;
+	top: -54px;
+	right: 0px;
+	padding: 8px 16px;
+	border: 1px solid;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: .25s;
+}
+
+.action-button:hover {
+	background: #3498db;
+	color: #FFF;
+}

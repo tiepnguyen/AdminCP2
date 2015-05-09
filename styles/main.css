@@ -1,0 +1,35 @@
+body {
+	font: 13px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	margin: 0;
+	background: #F5F8F9;
+}
+a {
+	text-decoration: none;
+	color: #3498db;
+	outline: none;
+}
+a:hover {
+	/*color: #1787B0;*/
+	color: #08F;
+}
+a:focus {
+	/*text-decoration: underline;*/
+}
+input {
+	outline: none;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+table {
+	border-collapse: collapse;
+}
+hr {
+	border: none;
+	border-top: 1px solid #E2E2E2;
+	border-bottom: 1px solid #FFF;
+	margin: 10px 0;
+}

@@ -1,0 +1,57 @@
+body {
+	background-color: #1E2C3D;
+	min-height: 400px;
+}
+.master-title {
+	padding-left: 20px;
+}
+.login-panel {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -170px;
+	margin-top: -132px;
+	padding: 30px;
+	min-width: 280px;
+	background-color: #FFF;
+	border-radius: 10px;
+	z-index: 1;
+}
+.login-title {
+	font-size: 2em;
+	font-weight: 300;
+	line-height: 1;
+	padding-bottom: 20px;
+	margin: 0 0 20px;
+	border-bottom: 1px solid #F2F2F2;
+}
+.login-form label {
+	display: block;
+	margin: 10px 0;
+	position: relative;
+}
+.login-form label i {
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	font-size: 1.5em;
+	color: #777;
+}
+.login-form input[type=text],
+.login-form input[type=password] {
+	width: 100%;
+	font-size: 1.3em;
+	font-weight: 300;
+	padding-left: 36px;
+	box-sizing: border-box;
+}
+.sticky-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 300;
+	color: #999;
+	padding: 10px;
+}

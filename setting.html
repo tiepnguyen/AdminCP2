@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>AdminCP2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="styles/style.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body class="">
+	<aside class="master-sidebar">
+		<a href="#" class="master-logo"></a>
+		<label class="master-search">
+			<input type="search" name="" placeholder="Search..." autofocus>
+		</label>
+		<nav class="master-nav">
+			<ul>
+				<li class="active">
+					<a href="#"><i class="fa fa-tachometer"></i>Dashboard</a>
+				</li>
+				<li class="expandable">
+					<a><i class="fa fa-edit"></i>Posts</a>
+					<ul>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Comments</a></li>
+					</ul>
+				</li>
+				<li class="expandable">
+					<a><i class="fa fa-file-code-o"></i>Pages</a>
+					<ul>
+						<li class="active"><a href="#">Articles</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Comments</a></li>
+					</ul>
+				</li>
+				<li class="expandable">
+					<a><i class="fa fa-user"></i>Members</a>
+					<ul>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Comments</a></li>
+					</ul>
+				</li>
+				<li class="expandable">
+					<a><i class="fa fa-plug"></i>Plugins</a>
+					<ul>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Comments</a></li>
+					</ul>
+				</li>
+				<li class="expandable">
+					<a><i class="fa fa-cogs"></i>Settings</a>
+					<ul>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Comments</a></li>
+					</ul>
+				</li>
+				<li class="expandable">
+					<a><i class="fa fa-area-chart"></i>Reports</a>
+					<ul>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Comments</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</aside>
+	<main class="master-main">
+		<header class="master-header">
+			<div class="master-title">Sassy Main Title</div>
+			<nav>
+				<div class="header-nav">
+					<ul>
+						<li>
+							<a href="#"><img src="images/flag-uk.png">English<i class="fa fa-angle-down"></i></a>
+							<ul>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Japanese</a></li>
+								<li><a href="#">Chinese</a></li>
+								<li><a href="#">Vietnamese</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><img src="images/user-white-64.png">Admin<i class="fa fa-angle-down"></i></a>
+							<ul>
+								<li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+								<li><a href="#"><i class="fa fa-cogs"></i>Settings</a></li>
+								<li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<h1 class="main-title">Settings</h1>
+		<section class="main-body">
+			<div class="container-pane center">
+				<table class="form-table wide">
+					<tr>
+						<td>Hotel Name</td>
+						<td>
+							<input type="text">
+						</td>
+						<td class="form-row-caption">Lorem ipsum dolor sit amet.</td>
+					</tr>
+					<tr>
+						<td>Hotel Address</td>
+						<td>
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>Contact Email</td>
+						<td>
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>Selection</td>
+						<td>
+							<select name="" id="">
+								<option value="">Option #1</option>
+								<option value="">Option #2</option>
+								<option value="">Option #3</option>
+								<option value="">Option #4</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="tr">
+						<td>Checkboxes</td>
+						<td>
+							<label><input type="checkbox" name="" id="" checked>Checkbox Option #1</label>
+							<label><input type="checkbox" name="" id="">Checkbox Option #2</label>
+						</td>
+					</tr>
+					<tr class="tr">
+						<td>Radios</td>
+						<td>
+							<label><input type="radio" name="radio" id="" checked>Radio Option #1</label>
+							<label><input type="radio" name="radio" id="">Radio Option #2</label>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">Description</td>
+						<td>
+							<textarea rows="4" class="no-resize"></textarea>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<div class="tabs">
+				<ul class="tabs-head">
+					<li class="active"><a href="#tab1">Overview</a></li>
+					<li><a href="#tab2">Properties</a></li>
+					<li><a href="#tab3">Currencies</a></li>
+				</ul>
+				<div class="tabs-body" id="tab1">
+					content 1
+				</div>
+				<div class="tabs-body" id="tab2">
+					content 2
+				</div>
+				<div class="tabs-body" id="tab3">
+					content 3
+				</div>
+			</div>
+			<br>
+			<button type="submit" class="right"><i class="fa fa-check"></i> Save</button>
+			<div class="clear"></div>
+		</section>
+	</main>
+	<script src="scripts/jquery-1.11.2.min.js"></script>
+	<script src="scripts/jquery-ui.min.js"></script>
+	<script src="scripts/jquery.cookie.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>
