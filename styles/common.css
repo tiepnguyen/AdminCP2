@@ -308,6 +308,33 @@ button[type=submit] {
 .calendar-table .not-available .info {
 	font-weight: bold;
 }
+
+.selectable .ui-selected {
+	background-color: #8AD0FF !important;
+}
+
+.selectable .week-holder {
+	width: 32px;
+	padding: 0;
+	background-color: #E9ECF1;
+}
+
+.selectable th {
+	cursor: s-resize;
+}
+
+.selectable th.week-holder {
+	cursor: se-resize;
+}
+
+.selectable td {
+	cursor: cell;
+}
+
+.selectable td.week-holder {
+	cursor: e-resize;
+}
+
 /**
  * Status
  */

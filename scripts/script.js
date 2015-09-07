@@ -85,4 +85,48 @@ jQuery(function($) {
 		});
 	});
 
+	$('.dialog-button').on('click', function(e) {
+        e.preventDefault();
+        var href = $(this).attr('href');
+        var dialog = $(href);
+        console.log(href);
+        dialog.dialog($.extend(dialog.data(), {
+            maxHeight: dialog.data('maxheight'),
+            open: function(e, ui) {
+                if (dialog.data('scrollable') === false) {
+                    $('body').css('overflow', 'hidden');
+                }
+                dialog.prev('.ui-dialog-titlebar').find('.ui-dialog-titlebar-close').blur();
+                // dialog.siblings('.ui-dialog-buttonpane').find('button:eq(0)').focus();
+            },
+            close: function(e, ui) {
+                if (dialog.data('scrollable') === false) {
+                    $('body').css('overflow', 'auto');
+                }
+            }
+        }));
+    });
+
+    $('#room_update').on('dialogopen', function() {
+    	var $this = $(this);
+    	var inputTxt = $this.find('input');
+    	$this.find('form').on('submit', function(e) {
+    		e.preventDefault();
+    		$this.siblings('.ui-dialog-buttonpane').find('button:eq(0)').click();
+    	});
+        $this.dialog('option', {
+        	open: function() {
+        		inputTxt.focus();
+        	},
+        	buttons: {
+	            Save: function() {
+	            	var value = inputTxt.val();
+	            	console.log(value);
+	            	$('.selectable .ui-selected .info').text(value);
+	                $this.dialog('close');
+	            }
+	        }
+        });
+    });
+
 });

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AdminCP2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="styles/style.css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body class="">
+    <aside class="master-sidebar">
+        <a href="#" class="master-logo"></a>
+        <label class="master-search">
+            <input type="search" name="" placeholder="Search..." autofocus>
+        </label>
+        <nav class="master-nav">
+            <ul>
+                <li class="active">
+                    <a href="#"><i class="fa fa-tachometer"></i>Dashboard</a>
+                </li>
+                <li class="expandable">
+                    <a><i class="fa fa-edit"></i>Posts</a>
+                    <ul>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Comments</a></li>
+                    </ul>
+                </li>
+                <li class="expandable">
+                    <a><i class="fa fa-file-code-o"></i>Pages</a>
+                    <ul>
+                        <li class="active"><a href="#">Articles</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Comments</a></li>
+                    </ul>
+                </li>
+                <li class="expandable">
+                    <a><i class="fa fa-user"></i>Members</a>
+                    <ul>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Comments</a></li>
+                    </ul>
+                </li>
+                <li class="expandable">
+                    <a><i class="fa fa-plug"></i>Plugins</a>
+                    <ul>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Comments</a></li>
+                    </ul>
+                </li>
+                <li class="expandable">
+                    <a><i class="fa fa-cogs"></i>Settings</a>
+                    <ul>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Comments</a></li>
+                    </ul>
+                </li>
+                <li class="expandable">
+                    <a><i class="fa fa-area-chart"></i>Reports</a>
+                    <ul>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Comments</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="master-main">
+        <header class="master-header">
+            <div class="master-title">Sassy Main Title</div>
+            <nav>
+                <div class="header-nav">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/flag-uk.png">English<i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Japanese</a></li>
+                                <li><a href="#">Chinese</a></li>
+                                <li><a href="#">Vietnamese</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/user-white-64.png">Admin<i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+                                <li><a href="#"><i class="fa fa-cogs"></i>Settings</a></li>
+                                <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <h1 class="main-title">Availability</h1>
+        <section class="main-body">
+            <form action="?view=mod_rate_setup&amp;rid=3&amp;rateid=2" method="post">
+                <div class="container-pane">
+                    <input type="hidden" name="token" value="06939dbd75c75aec66bca5e82af4c504">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Room Type</td>
+                                <td>From</td>
+                                <td>To</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="" id="">
+                                        <option>Deluxe Room</option>
+                                        <option>Executive Governor Suite</option>
+                                        <option>Executive Premium</option>
+                                        <option>Executive Suite</option>
+                                        <option>Governor Suite</option>
+                                        <option>Imperial Suite</option>
+                                        <option>Premium</option>
+                                        <option>Presidential Suite</option>
+                                        <option>Rex Suite</option>
+                                        <option>Junior Suite</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="from" class="datepicker from" value="30 Jul 2015">
+                                </td>
+                                <td>
+                                    <!-- <span> - </span> -->
+                                    <input type="text" name="to" class="datepicker to" value="30 Aug 2015">
+                                </td>
+                                <td>
+                                    <button type="submit" class="compact" name="submit_date" value="View rate table">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </form>
+            <br>
+
+            <div class="availability">
+                
+                <ul class="tabs-head">
+                    <li class="active"><a href="#">Best Available Rate</a></li>
+                    <li><a href="#">Early Bird Promotion</a></li>
+                    <li><a href="#">Flexi - Room Only</a></li>
+
+                    <li><a href="#">Early Bird Promotion</a></li>
+                    <li><a href="#">Flexi - Room Only</a></li>
+                    <li><a href="#">Early Bird Promotion</a></li>
+                    <li><a href="#">Flexi - Room Only</a></li>
+                </ul>
+                
+                <table cellspacing="0" border="0" width="100%" class="calendar-table selectable">
+                    <tbody>
+                        <tr>
+                            <th class="week-holder"></th>
+                            <th class="weekday">Monday</th>
+                            <th class="weekday">Tuesday</th>
+                            <th class="weekday">Wednesday</th>
+                            <th class="weekday">Thursday</th>
+                            <th class="weekday">Friday</th>
+                            <th class="weekend">Saturday</th>
+                            <th class="weekend">Sunday</th>
+                        </tr>
+                        <tr>
+                            <td class="week-holder"></td>
+                            <td class="disable"></td>
+                            <td class="disable"></td>
+                            <td class="disable"></td>
+                            <td class="disable"></td>
+                            <td class="disable"></td>
+                            <td class="weekend">
+                                <div class="date-label">09</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">10</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="week-holder"></td>
+                            <td class="weekday">
+                                <div class="date-label">11</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">12</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">13</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">14</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">15</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">16</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">17</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="week-holder"></td>
+                            <td class="weekday">
+                                <div class="date-label">18</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">19</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">20</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">21</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">22</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">23</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">24</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="week-holder"></td>
+                            <td class="weekday">
+                                <div class="date-label">25</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">26</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">27</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">28</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">29</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">30</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">31</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="week-holder"></td>
+                            <td class="weekday">
+                                <div class="date-label">Jan 01</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">02</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">03</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">04</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">05</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">06</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">07</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="week-holder"></td>
+                            <td class="weekday">
+                                <div class="date-label">08</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">09</div>
+                                <div class="available normal">
+                                    <span class="info">400</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">10</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">11</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">12</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">13</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">14</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="week-holder"></td>
+                            <td class="weekday">
+                                <div class="date-label">15</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">16</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">17</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">18</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">19</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">20</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">21</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="week-holder"></td>
+                            <td class="weekday">
+                                <div class="date-label">22</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">23</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">24</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">25</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">26</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">27</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">28</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="week-holder"></td>
+                            <td class="weekday">
+                                <div class="date-label">29</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">30</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">Feb 01</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">02</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">03</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">04</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <div class="date-label">05</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="week-holder"></td>
+                            <td class="weekday">
+                                <div class="date-label">06</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">07</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">08</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="weekday">
+                                <div class="date-label">09</div>
+                                <div class="not-available normal">
+                                    <span class="info">0</span>
+                                </div>
+                            </td>
+                            <td class="disable"></td>
+                            <td class="disable"></td>
+                            <td class="disable"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="context-menu-overlay">
+                    <ul class="context-menu" id="availability-menu">
+                        <li><a class="dialog-button" href="#room_update">Update...</a></li>
+                        <li><a class="dialog-button" href="#room_add">Add...</a></li>
+                        <li><a class="dialog-button" href="#room_zerolize">Close Out</a></li>
+                    </ul>
+                </div>
+                <div class="prompt-dialog" id="room_update" title="Update Allotment" data-modal="true">
+                    <form>
+                        <table class="form-table">
+                            <tr>
+                                <td>
+                                    Room
+                                </td>
+                                <td>
+                                    <input type="number" min="0">
+                                </td>
+                            </tr>
+                        </table>
+                    </form> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/jquery-1.11.2.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.cookie.js"></script>
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        $.fn.getFollowerCells = function(context) {
+            var cell = $(this);
+            if (cell.is('th.week-holder')) {
+                return $('th, td:not(.disable)', context);
+            } else if (cell.is('th')) {
+                var index = cell.index() + 1;
+                return $('td:nth-child(' + index + '):not(.disable)', context);
+            } else if (cell.is('td.week-holder')) {
+                return cell.nextAll('td:not(.disable)');
+            }
+        };
+
+        function toggleSelectElement(elementsToSelect, select) {
+            $(elementsToSelect).toggleClass('ui-selected', select);
+        }
+
+        function toggleSelect(e, ui) {
+            var isSelected = (e.type == 'selectableselected');
+            var cell = isSelected ? ui.selected : ui.unselected;
+            var followers = $(cell).getFollowerCells(e.target);
+            if (typeof followers !== 'undefined') {
+                toggleSelectElement(followers, isSelected);
+            }
+        }
+
+        $('.selectable').selectable({
+            filter: 'th:not(.disable), td:not(.disable)'
+        }).on('selectableselected selectableunselected', toggleSelect);
+
+        $('.datepicker').datepicker();
+
+        $('.selectable').on('contextmenu', function(e) {
+            if ($(this).find('.ui-selected').length) {
+                e.preventDefault();
+                var overlay = $('.context-menu-overlay').show();
+                var menu = overlay.find('.context-menu').css({
+                    left: e.clientX + 'px',
+                    top: e.clientY + 'px'
+                });
+                overlay.on('click', function() {
+                    overlay.hide();
+                });
+            }
+        });
+
+        $(document).on('keyup', function(e) {
+            if (e.keyCode == 27) {
+                var contextMenu, uiSelected;
+                if ((contextMenu = $('.context-menu-overlay')).css('display') != 'none') {
+                    return contextMenu.click();
+                }
+                if ((uiSelected = $('.ui-selected')).length) {
+                    return uiSelected.removeClass('ui-selected');
+                }
+            }
+        });
+    });
+    </script>
+    <style type="text/css">
+    .selectable td {
+        width: 13.88%;
+    }
+    .context-menu {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 160px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #F0F0F0;
+        border: 1px solid #C9CBCC;
+        border-radius: 6px;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, .25);
+        padding: 6px 0;
+    }
+    .context-menu a {
+        padding: 6px 20px;
+        display: block;
+        color: #000;
+        cursor: pointer;
+    }
+    .context-menu a:hover {
+        background-color: #3C92FA;
+        color: #FFF;
+    }
+    .context-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+    }
+    .ui-dialog-content input[type=number] {
+        padding: 6px;
+    }
+    </style>
+</body>
+
+</html>
